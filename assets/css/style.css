@@ -7,7 +7,7 @@ body {
 }
 
 *,
-*:befor,
+*:before,
 *:after{
     box-sizing: border-box;
 }
@@ -69,9 +69,7 @@ hr {
     display: block;
     width: 10%;
     height: 15%;
-    margin: 1,5% auto 1,5%;
-    
-    
+    margin: 1.5% auto 1.5%;
     background-color: #fff;
 }
 
@@ -141,6 +139,7 @@ hr {
 
 .nav_link:hover {
     color: #fce38a;
+    cursor: pointer;
 }
 
 .nav_link:hover:after {
@@ -200,7 +199,7 @@ hr {
     opacity: 1;
 }
 
-.slider_item.active: before {
+.slider_item.active:before {
     content: "";
     display: block;
     width: 70px;
@@ -256,7 +255,7 @@ hr {
 }
 
 .section_title{
-    font-size: 30 px;
+    font-size: 30px;
     font-weight: 700;
     color: #333;
     text-transform: uppercase;
@@ -317,9 +316,6 @@ hr {
 
 .card_img img {
     display: block;
-    transform: opacity .1s linear;
-    
-
 }
 
 .card_text {
@@ -374,7 +370,7 @@ hr {
     flex: 1 1 0;
     padding: 70px 25px;
     border-left: 1px solid #b5eae0;
-    
+    cursor: pointer;
     text-align: center;
     color: #fff;
 }
@@ -433,7 +429,7 @@ hr {
 
 .devices {
     width: 100%;
-    max-width: 600xp;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
  }
@@ -631,18 +627,18 @@ text-transform: uppercase;
 }
 
 .social_item {
-	width: 9%;
-	height: 9%;
-	padding: 10px;
-	
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+	width: 40px;
+	height: 40px;
 	background-color: #fce38a;
 	border-right: 1px solid #f38181;
-	
 	font-size: 30px;
 	text-decoration: none;
 	color: #f38181;
 	line-height: 1;
-	
 	transition: background .1s
 	linear, color .1s linear;
 }
@@ -696,7 +692,7 @@ text-transform: uppercase;
 	justify-content: center;
 	transition: opacity .2s linear;
 	max-width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .works_info {
@@ -738,3 +734,42 @@ text-transform: uppercase;
 .clients_item {
 	width: 50%;
 }
+
+/*Footer*/
+
+.footer{
+    background-color: #211d1d;
+    height: 250px;
+}
+
+.footer_site_description{
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact_info{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer_site_copyright{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (max-width: 1300px) { 
+   .card{
+       flex-wrap: wrap;
+       justify-content: space-around;
+   } 
+   .services{
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+}
+
